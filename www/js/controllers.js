@@ -45,7 +45,7 @@ angular.module('starter.controllers', [])
 .controller('PessoasCtrl', function($scope, $ionicLoading, dataFactory){
     var _this = this
     $ionicLoading.show({
-      template: 'Loading...'
+      template: '<ion-spinner icon="android"></ion-spinner><p>Carregando...</p>'
     })
     // iniciar rest
     getPessoas();
